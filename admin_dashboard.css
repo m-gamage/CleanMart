@@ -1,0 +1,201 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0b516c,#ffffff);
+    min-height:100vh;
+    margin:0;
+    padding:0;
+}
+
+/* Container */
+
+.admin-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Title */
+
+.admin-container h1{
+    text-align:center;
+    color:#051153;
+    margin-bottom:40px;
+    font-size:2.3rem;
+    font-weight:600;
+}
+
+/* Stats Section */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+/* Cards */
+
+.card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    border-top:5px solid #1ee5ce;
+}
+
+.card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 28px 40px rgba(0,0,0,0.12);
+}
+
+/* Icons */
+
+.card i{
+    font-size:2.3rem;
+    color:#1e88e5;
+    margin-bottom:15px;
+}
+
+/* Numbers */
+
+.card h2{
+    font-size:2.5rem;
+    color:#0f4c81;
+    margin-bottom:8px;
+}
+
+/* Labels */
+
+.card p{
+    color:#666;
+    font-size:1.2rem;
+    font-weight:500;
+}
+
+/* Admin Links */
+
+.admin-links{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* Buttons */
+
+.admin-links a{
+    position:relative;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    padding:15px;
+    background:#1e88e5;
+    color:white;
+    border-radius:10px;
+    font-weight:500;
+    transition:0.3s ease;
+    box-shadow:0 4px 10px rgba(30,136,229,0.2);
+}
+
+/* Shine effect */
+.admin-links a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transition:0.6s;
+}
+
+/* animate shine on hover */
+.admin-links a:hover::before{
+    left:100%;
+}
+
+/* hover effect */
+.admin-links a:hover{
+    background:#1565c0;
+    transform:translateY(-3px);
+}
+
+/* Logout container centered */
+.logout-container{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+}
+
+/* Logout button */
+.logout-btn{
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    text-decoration:none;
+    text-align:center;
+    padding:15px 40px;
+    background:#ef5350;
+    color:white;
+    border-radius:10px;
+    font-weight:500;
+    transition:0.3s ease;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* shine effect */
+.logout-btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transition:0.6s;
+}
+
+.logout-btn:hover::before{
+    left:100%;
+}
+
+.logout-btn:hover{
+    background:#d32f2f;
+    transform:translateY(-3px);
+}
+/* Responsive */
+
+@media(max-width:768px){
+
+    .admin-container h1{
+        font-size:1.8rem;
+    }
+
+    .card h2{
+        font-size:2rem;
+    }
+
+    .card i{
+        font-size:2rem;
+    }
+}

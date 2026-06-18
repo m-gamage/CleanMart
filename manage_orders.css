@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Background */
+body{
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    background: linear-gradient(135deg,#a0ceff,#ffffff);
+}
+
+/* Container */
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    border:1px solid rgba(30,144,255,0.1);
+}
+
+/* Title */
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#1e3a8a;
+    font-size:2rem;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+/* Header */
+th{
+    background: linear-gradient(135deg, #1e90ff, #60a5fa);
+    color:white;
+    padding:14px;
+    font-size:14px;
+}
+
+/* Cells */
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+    background:#fff;
+    transition:0.3s;
+}
+
+/* Hover effect */
+tr:hover td{
+    background:#f0f7ff;
+}
+
+/* Buttons */
+.edit-btn, .delete-btn{
+    padding:7px 12px;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+    font-size:13px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+/* Edit */
+.edit-btn{
+    background:linear-gradient(135deg,#22c55e,#22c55e);
+}
+
+.edit-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(30,144,255,0.25);
+}
+
+/* Delete */
+.delete-btn{
+    background:linear-gradient(135deg,#ef4444,#ef4444);
+}
+
+.delete-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(255,71,87,0.25);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    table{
+        font-size:13px;
+    }
+
+    .container{
+        padding:15px;
+    }
+}
