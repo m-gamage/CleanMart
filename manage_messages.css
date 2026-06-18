@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    background: linear-gradient(135deg,#a0ceff,#ffffff);
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+/* Table container */
+.table-wrapper{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    border:1px solid rgba(30,144,255,0.12);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+/* Header */
+th{
+    background:linear-gradient(135deg,#1e90ff,#2563eb);
+    color:white;
+    padding:16px;
+    font-weight:600;
+    text-align:center;
+}
+
+/* Cells */
+td{
+    padding:15px;
+    border-bottom:1px solid #edf2f7;
+    text-align:center;
+    color:#374151;
+}
+
+/* Hover effect */
+tr:hover td{
+    background:#f8fbff;
+}
+
+/* Message column */
+.message{
+    max-width:450px;
+    text-align:left;
+    line-height:1.6;
+    word-break:break-word;
+}
+
+/* Delete button */
+.delete-btn{
+    display:inline-block;
+    padding:8px 14px;
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(239,68,68,0.25);
+}
+
+
+/* Responsive */
+@media(max-width:900px){
+
+    .table-wrapper{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:900px;
+    }
+}

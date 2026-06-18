@@ -1,0 +1,125 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Soft Blue-White Gradient Background */
+body{
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    background: linear-gradient(135deg,#a0ceff,#ffffff);
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    background:#ffffff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    border:1px solid rgba(30,144,255,0.1);
+}
+
+/* Title */
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2rem;
+    color:#1e3a8a;
+    font-weight:600;
+    letter-spacing:0.5px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+/* Header */
+th{
+    background: linear-gradient(135deg, #1e90ff, #60a5fa);
+    color:white;
+    padding:14px;
+    font-size:15px;
+}
+
+/* Table cells */
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+    background:#fff;
+    transition:0.25s ease;
+}
+
+/* Row hover effect */
+tr:hover td{
+    background:#f0f7ff;
+}
+
+/* Buttons */
+.edit, .delete{
+    padding:7px 12px;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    margin:0 3px;
+    display:inline-block;
+    transition:0.3s ease;
+    font-size:14px;
+}
+
+/* Edit Button (Blue) */
+.edit{
+    background: linear-gradient(135deg, #1e90ff, #3b82f6);
+}
+
+.edit:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(30,144,255,0.25);
+}
+
+/* Delete Button (Soft Red but balanced with theme) */
+.delete{
+    background: linear-gradient(135deg, #ff6b6b, #ff4757);
+}
+
+.delete:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(255,71,87,0.25);
+}
+
+/* Table header row spacing fix */
+th, td{
+    font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .container{
+        width:100%;
+        padding:15px;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+    .edit, .delete{
+        padding:6px 10px;
+        font-size:12px;
+    }
+}
